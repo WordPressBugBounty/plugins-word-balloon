@@ -163,14 +163,16 @@ class word_balloon_List_Table extends WP_List_Table {
     
 
     if (isset($_REQUEST['orderby'])) {
-      function usort_reorder($a,$b){
-        $orderby = (!empty($_REQUEST['orderby'])) ? sanitize_text_field( esc_textarea($_REQUEST['orderby']) ) : 'title';
+      if (!function_exists( 'usort_reorder' ) ) {
+        function usort_reorder($a,$b){
+          $orderby = (!empty($_REQUEST['orderby'])) ? sanitize_text_field( esc_textarea($_REQUEST['orderby']) ) : 'title';
 
-        $order = (!empty($_REQUEST['order'])) ? sanitize_text_field( esc_textarea($_REQUEST['order']) ) : 'asc';
+          $order = (!empty($_REQUEST['order'])) ? sanitize_text_field( esc_textarea($_REQUEST['order']) ) : 'asc';
 
-        $result = strcmp($a[$orderby], $b[$orderby]);
+          $result = strcmp($a[$orderby], $b[$orderby]);
 
-        return ($order==='asc') ? $result : -$result;
+          return ($order==='asc') ? $result : -$result;
+        }
       }
       usort($data, sanitize_sql_orderby('usort_reorder'));
     }

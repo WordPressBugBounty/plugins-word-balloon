@@ -1,3 +1,7 @@
+= 4.22.3 =
+* Released: February 6, 2025
+* fixed: Minor fix.
+
 = 4.22.2 =
 * Released: June 28, 2024
 * fixed: delete polyfill.io.
