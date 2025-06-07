@@ -62,7 +62,7 @@ function word_balloon_build_word_balloon_box( $atts , $content ){
 		wp_enqueue_style( 'word_balloon_inview_style', WORD_BALLOON_URI . 'css/word_balloon_inview.min.css' , array() , WORD_BALLOON_VERSION);
 		
 		
-		wp_enqueue_script('word_balloon_inview_script', WORD_BALLOON_URI . 'js/word_balloon_inview.min.js',array('polyfill_IntersectionObserver'),WORD_BALLOON_VERSION,true);
+		wp_enqueue_script('word_balloon_inview_script', WORD_BALLOON_URI . 'js/word_balloon_inview.min.js',array(),WORD_BALLOON_VERSION,true);
 	}
 
 	
