@@ -25,7 +25,7 @@ if ( ! function_exists( 'word_balloon_nonce_action_event' ) ) :
       $date = current_time( 'mysql' );
 
 
-
+      
       if( $_POST['datauri'] === 'true' && defined('WORD_BALLOON_PRO_DIR') && file_exists( WORD_BALLOON_PRO_DIR . 'inc/save/admin-avatar_save.php' ) ){
 
         require_once WORD_BALLOON_PRO_DIR . 'inc/save/admin-avatar_save.php';

@@ -2,6 +2,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
+
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 if(!is_plugin_active( 'word-balloon-pro/word-balloon-pro.php' )):
 
@@ -54,14 +55,17 @@ function word_balloon_only_edit_page_scripts() {
 	wp_enqueue_style('word_balloon_edit', WORD_BALLOON_URI . 'css/word_balloon_edit.min.css',array('word_balloon_admin'),WORD_BALLOON_VERSION);
 	wp_enqueue_style('word_balloon_font', WORD_BALLOON_URI . 'css/font/style.min.css',array(),WORD_BALLOON_VERSION);
 	//add_action( 'wp_enqueue_scripts', 'word_balloon_translations_edit' );
+
 	
 	wp_enqueue_script('word_balloon_base_script', WORD_BALLOON_URI . 'js/action/word_balloon_action_base.min.js',array(),WORD_BALLOON_VERSION,true);
 	wp_register_script('word_balloon_edit', WORD_BALLOON_URI . 'js/word_balloon_edit.min.js',array('word_balloon_base_script'),WORD_BALLOON_VERSION,true);
 	wp_enqueue_script('word_balloon_edit');
 	wp_enqueue_script('word_balloon_avatar_register', WORD_BALLOON_URI . 'js/word_balloon_avatar_register.min.js',array('word_balloon_edit'),WORD_BALLOON_VERSION,true);
+
 	
 	$translations = word_balloon_script_translations();
 	wp_localize_script( 'word_balloon_base_script', 'translations_word_balloon', $translations );
+
 	
 	wp_localize_script('word_balloon_base_script','word_balloon_nonce_ajax_object',array(
 		'ajax_url' => admin_url('admin-ajax.php'),
@@ -180,9 +184,9 @@ function word_balloon_script_translations() {
 }
 
 
-function word_balloon_scriput_translations(){
-	return word_balloon_script_translations();
-}
+
+	
+
 
 
 
@@ -194,7 +198,7 @@ function word_balloon_admin_color_picker() {
 
 
 
-	wp_register_script( 'wp-color-picker-alpha', WORD_BALLOON_URI . 'js/wp-color-picker-alpha.min.js', array( 'wp-color-picker' ), WORD_BALLOON_VERSION, true );
+	wp_register_script( 'wp-color-picker-alpha', WORD_BALLOON_URI . 'js/wp-color-picker-alpha.min.js', array( 'jquery', 'wp-color-picker' ), WORD_BALLOON_VERSION, true );
 
 	wp_add_inline_script(
 		'wp-color-picker-alpha',
