@@ -3,7 +3,7 @@
 Plugin Name: Word Balloon
 Plugin URI: https://dev.word-balloon.com/en/word-balloon/
 Description: Support for Block editor(Gutenberg) & Classic Editor.You will easy to add speech balloon in your post.
-Version: 4.22.5
+Version: 4.23.1
 Author: YAHMAN
 Author URI: https://back2nature.jp/en/
 License: GNU General Public License v3 or later
@@ -49,6 +49,8 @@ Domain Path: /languages/
     	
     	require_once WORD_BALLOON_DIR . 'inc/admin.php';
     }else{
+        
+        require_once WORD_BALLOON_DIR . 'inc/enqueue.php';
     	
     	require_once WORD_BALLOON_DIR . 'inc/shortcode.php';
     }

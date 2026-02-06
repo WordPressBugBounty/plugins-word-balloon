@@ -167,6 +167,7 @@ function word_balloon_custom_enqueue() {
 		require_once WORD_BALLOON_DIR . 'inc/admin/admin_post.php';
 		add_action('admin_footer', 'word_balloon_post_page');
 
+		
 		word_balloon_user_styles();
 
 

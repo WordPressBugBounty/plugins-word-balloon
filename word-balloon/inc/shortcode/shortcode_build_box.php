@@ -26,7 +26,7 @@ function word_balloon_build_word_balloon_box( $atts , $content ){
 	$content = do_shortcode( shortcode_unautop( $content ) );
 
 	
-	add_action( 'wp_footer', 'word_balloon_user_styles');
+	//add_action( 'wp_footer', 'word_balloon_user_styles');
 
 	
 	require_once WORD_BALLOON_DIR . 'inc/shortcode/shortcode_function.php';
@@ -54,16 +54,16 @@ function word_balloon_build_word_balloon_box( $atts , $content ){
 	$load_setting['name_margin'] = floor( (int)$load_setting['name_margin'] * 1.4 );
 
 	
-	wp_enqueue_style('word_balloon_skin_'.$atts['balloon'], WORD_BALLOON_URI . 'css/skin/word_balloon_'.$atts['balloon'].'.min.css',array('word_balloon_user_style'),WORD_BALLOON_VERSION);
+	
 
 	
-	if($load_setting['inview'] === 'true' ){
-		
-		wp_enqueue_style( 'word_balloon_inview_style', WORD_BALLOON_URI . 'css/word_balloon_inview.min.css' , array() , WORD_BALLOON_VERSION);
+	
 		
 		
-		wp_enqueue_script('word_balloon_inview_script', WORD_BALLOON_URI . 'js/word_balloon_inview.min.js',array(),WORD_BALLOON_VERSION,true);
-	}
+		
+		
+		
+	
 
 	
 	if( file_exists( WORD_BALLOON_DIR . 'inc/adjust/adjust_'.basename($atts['balloon']).'.php' ) ){

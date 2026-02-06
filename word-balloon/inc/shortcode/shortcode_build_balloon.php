@@ -24,7 +24,7 @@ function word_balloon_build_balloon_box( $atts , $content , $load_setting ){
 
 	
 	if($atts['balloon_filter'] != ''){
-		wp_enqueue_style('word_balloon_filter_'.$atts['balloon_filter'], WORD_BALLOON_URI . 'css/filter/word_balloon_'.$atts['balloon_filter'].'.min.css',array('word_balloon_user_style'),WORD_BALLOON_VERSION);
+		
 		$balloon_data['balloon_filter'] = ' w_b_f_'.$atts['balloon_filter'];
 	}
 
@@ -70,7 +70,7 @@ function word_balloon_build_balloon_box( $atts , $content , $load_setting ){
 	if($atts['balloon_effect'] != '' ){
 
 		$balloon_data['effect'] .= ' w_b_'.$atts['balloon_effect'];
-		wp_enqueue_style('word_balloon_effect_'.$atts['balloon_effect'], WORD_BALLOON_URI . 'css/effect/word_balloon_'.$atts['balloon_effect'].'.min.css',array('word_balloon_user_style'),WORD_BALLOON_VERSION);
+		
 
 
 		if($atts['balloon_effect_duration'] !== '' && function_exists('word_balloon_pro_animation_duration') )

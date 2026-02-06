@@ -36,7 +36,7 @@ function word_balloon_build_avatar_box( $atts , $load_setting ){
 	
 	if($atts['avatar_filter'] !== ''){
 		$avatar_data['class']['w_b_ava_img'] .= ' w_b_f_'.$atts['avatar_filter'];
-		wp_enqueue_style('word_balloon_filter_'.$atts['avatar_filter'], WORD_BALLOON_URI . 'css/filter/word_balloon_'.$atts['avatar_filter'].'.min.css',array('word_balloon_user_style'),WORD_BALLOON_VERSION);
+		
 	}
 
 
@@ -45,7 +45,7 @@ function word_balloon_build_avatar_box( $atts , $load_setting ){
 	
 	if($atts['avatar_effect'] !== '' ){
 		$avatar_data['class']['w_b_ava_effect'] .= ' w_b_'.$atts['avatar_effect'];
-		wp_enqueue_style('word_balloon_effect_'.$atts['avatar_effect'], WORD_BALLOON_URI . 'css/effect/word_balloon_'.$atts['avatar_effect'].'.min.css',array('word_balloon_user_style'),WORD_BALLOON_VERSION);
+		
 
 		if($atts['avatar_effect_duration'] !== '' && function_exists('word_balloon_pro_animation_duration') )
 			$avatar_data['style']['w_b_ava_effect'] .= word_balloon_pro_animation_duration($atts['avatar_effect_duration']);

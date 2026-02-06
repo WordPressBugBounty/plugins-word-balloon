@@ -1,3 +1,12 @@
+= 4.23.1 =
+* Released: January 7, 2026
+* fixed: Minor fix.
+
+= 4.23.0 =
+* Released: January 1, 2026
+* Support WordPress6.9.
+* Support Word Balloon PRO 4.23.x
+
 = 4.22.5 =
 * Released: July 5, 2025
 * fixed: Minor fix.
