@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Word Balloon\n"
-"POT-Creation-Date: 2024-11-18 14:35+0900\n"
-"PO-Revision-Date: 2024-11-18 14:35+0900\n"
+"POT-Creation-Date: 2026-08-22 15:16+0900\n"
+"PO-Revision-Date: 2026-08-22 15:17+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -19,45 +19,45 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: inc/admin.php:15
+#: inc/admin.php:16
 msgid "Setting Up Word Balloon"
 msgstr "Word Balloon の設定"
 
-#: inc/admin.php:133
+#: inc/admin.php:141
 msgctxt "text_button"
 msgid "Word Balloon"
 msgstr "吹き出し"
 
-#: inc/admin.php:135
+#: inc/admin.php:143
 msgctxt "text_button"
 msgid "Set quote"
 msgstr "セリフセット"
 
-#: inc/admin.php:152
+#: inc/admin.php:160
 msgid "Select an avatar"
 msgstr "アバターの選択"
 
-#: inc/admin.php:153 inc/admin/post/admin-post_status.php:30
+#: inc/admin.php:161 inc/admin/post/admin-post_status.php:30
 msgid "Select"
 msgstr "選択"
 
-#: inc/admin.php:154
+#: inc/admin.php:162
 msgid "Select a photo"
 msgstr "画像の選択"
 
-#: inc/admin.php:155
+#: inc/admin.php:163
 msgid "Do you want to delete the avatar?"
 msgstr "削除しますがよろしいですか?"
 
-#: inc/admin.php:156
+#: inc/admin.php:164
 msgid "Really remove avatar from the system?"
 msgstr "本当に削除してよろしいですか  ?"
 
-#: inc/admin.php:157
+#: inc/admin.php:165
 msgid "Edit Avatar"
 msgstr "アバターの設定"
 
-#: inc/admin.php:158 inc/admin/edit/admin_avatar_register.php:29
+#: inc/admin.php:166 inc/admin/edit/admin_avatar_register.php:29
 #: inc/admin/post/admin-post_avatar.php:75 inc/ajax_nonce.php:99
 #: inc/class-w_b_list_table.php:81 inc/settings/default_type.php:155
 #: js/word_balloon_block.js:2552 js/word_balloon_block.js:2564
@@ -65,92 +65,92 @@ msgstr "アバターの設定"
 msgid "Name"
 msgstr "名前"
 
-#: inc/admin.php:159 inc/admin/edit/admin_avatar_register.php:31
+#: inc/admin.php:167 inc/admin/edit/admin_avatar_register.php:31
 #: inc/ajax_nonce.php:99 inc/class-w_b_list_table.php:82
 msgid "Note"
 msgstr "メモ"
 
-#: inc/admin.php:160
+#: inc/admin.php:168
 msgid "Update"
 msgstr "更新"
 
-#: inc/admin.php:161
+#: inc/admin.php:169
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: inc/admin.php:162 inc/ajax_nonce.php:99 inc/class-w_b_list_table.php:83
+#: inc/admin.php:170 inc/ajax_nonce.php:99 inc/class-w_b_list_table.php:83
 msgid "Priority"
 msgstr "優先度"
 
-#: inc/admin.php:163 js/word_balloon_block.js:1143
+#: inc/admin.php:171 js/word_balloon_block.js:1143
 #: js/word_balloon_block.min.js:1
 msgid "John Doe"
 msgstr "名無しの権兵衛"
 
-#: inc/admin.php:164
+#: inc/admin.php:172
 msgid "Select a sound"
 msgstr "サウンドの選択"
 
-#: inc/admin.php:165 js/word_balloon_block.js:1454
+#: inc/admin.php:173 js/word_balloon_block.js:1454
 #: js/word_balloon_block.js:1477 js/word_balloon_block.min.js:1
 msgid "side the avatar"
 msgstr "アバターの横"
 
-#: inc/admin.php:166 inc/admin/post/admin-post_avatar.php:92
+#: inc/admin.php:174 inc/admin/post/admin-post_avatar.php:92
 #: js/word_balloon_block.js:1486 js/word_balloon_block.min.js:1
 msgid "on the balloon"
 msgstr "吹き出しの上"
 
-#: inc/admin.php:167 inc/admin/post/admin-post_avatar.php:95
+#: inc/admin.php:175 inc/admin/post/admin-post_avatar.php:95
 #: js/word_balloon_block.js:1495 js/word_balloon_block.min.js:1
 msgid "under the balloon"
 msgstr "吹き出しの下"
 
-#: inc/admin.php:168
+#: inc/admin.php:176
 msgid "Shortcode has been inserted"
 msgstr "ショートコードを挿入しました"
 
-#: inc/admin.php:169
+#: inc/admin.php:177
 msgid "Shortcode copied to clipboard"
 msgstr "ショートコードをクリップボードにコピーしました"
 
-#: inc/admin.php:170
+#: inc/admin.php:178
 msgid "Restore successful"
 msgstr "復元に成功しました"
 
-#: inc/admin.php:171
+#: inc/admin.php:179
 msgid "Failed to restore"
 msgstr "復元に失敗しました"
 
-#: inc/admin.php:172
+#: inc/admin.php:180
 msgid "Updated"
 msgstr "更新"
 
-#: inc/admin.php:173
+#: inc/admin.php:181
 msgid "Updating..."
 msgstr "更新中..."
 
-#: inc/admin.php:174
+#: inc/admin.php:182
 msgid "Copied"
 msgstr "コピーしました"
 
-#: inc/admin.php:175
+#: inc/admin.php:183
 msgid "Please select avatar checkbox."
 msgstr "アバターをチェックしてください。"
 
-#: inc/admin.php:176
+#: inc/admin.php:184
 msgid "Please select bulk action."
 msgstr "一括操作を選択してください。"
 
-#: inc/admin.php:177
+#: inc/admin.php:185
 msgid "Please select text."
 msgstr "テキストを選択してください。"
 
-#: inc/admin.php:178
+#: inc/admin.php:186
 msgid "Failed:"
 msgstr "失敗:"
 
-#: inc/admin.php:236 inc/admin/admin_edit.php:203
+#: inc/admin.php:244 inc/admin/admin_edit.php:203
 #: inc/admin/edit/admin_various_settings.php:15
 msgid "Settings"
 msgstr "設定"

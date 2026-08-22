@@ -1,3 +1,8 @@
+= 4.23.2 =
+* Released: August 22, 2026
+* Support WordPress7.1.
+* fixed: Minor fix.
+
 = 4.23.1 =
 * Released: January 7, 2026
 * fixed: Minor fix.

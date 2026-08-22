@@ -457,4 +457,13 @@ function word_balloon_block_control_panel() {
 
 	wp_enqueue_style('word_balloon_admin_block', WORD_BALLOON_URI . 'css/word_balloon_block.min.css',array('word_balloon_user_style'),WORD_BALLOON_VERSION);
 
+	
+	add_action( 'enqueue_block_assets', 'word_balloon_enqueue_iframe_admin_block_styles' );
+	function word_balloon_enqueue_iframe_admin_block_styles() {
+    
+		if ( is_admin() ) {
+			wp_enqueue_style('word_balloo_iframen_admin_block', WORD_BALLOON_URI . 'css/word_balloon_block.min.css',array('word_balloon_user_style'),WORD_BALLOON_VERSION);
+		}
+	}
+	
 }

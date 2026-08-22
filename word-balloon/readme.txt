@@ -3,8 +3,8 @@ Contributors: back2nature
 Donate link: https://dev.back2nature.jp/en/donations/
 Tags: speech,bubble,balloon,chat,comic
 Requires at least: 3.9.3
-Tested up to: 6.9
-Stable tag: 4.23.1
+Tested up to: 7.1
+Stable tag: 4.23.2
 Requires PHP: 5.3
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -50,6 +50,11 @@ Translation ready and currently translated in Japanese(日本語).
 9. Blog Post: Speech bubble with avatar.
 
 == Changelog ==
+
+= 4.23.2 =
+* Released: August 22, 2026
+* Support WordPress7.1.
+* fixed: Minor fix.
 
 = 4.23.1 =
 * Released: January 7, 2026
